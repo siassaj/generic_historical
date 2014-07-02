@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "rails_generic_reporting/version"
+require "generic_reporting/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "rails_generic_reporting"
-  s.version     = RailsGenericReporting::VERSION
+  s.name        = "generic_reporting"
+  s.version     = GenericReporting::VERSION
   s.authors     = ["Sia. S."]
   s.email       = ["sia.s.saj@gmail.com"]
-  s.homepage    = "http://www.github.com/quazimodo/rails_generic_reporting"
+  s.homepage    = "http://www.github.com/quazimodo/generic_reporting"
   s.summary     = "Add generic reporting to models."
   s.description = "Add generic reporting to models."
   s.license     = "MIT"

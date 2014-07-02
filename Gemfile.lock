@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_generic_reporting (0.0.1)
+    generic_reporting (0.0.1)
       rails (~> 4.1.0.beta1)
 
 GEM
@@ -158,9 +158,9 @@ DEPENDENCIES
   capybara
   database_cleaner
   factory_girl_rails
+  generic_reporting!
   guard-rspec
   guard-spin
-  rails_generic_reporting!
   rspec-rails
   spin
   sqlite3
