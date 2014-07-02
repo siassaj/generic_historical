@@ -1,0 +1,2 @@
+module RailsGenericReporting
+end
