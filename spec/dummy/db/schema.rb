@@ -11,9 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140702164939) do
+ActiveRecord::Schema.define(version: 20140703000600) do
+
+  create_table "report_items", force: true do |t|
+    t.integer "item_id"
+    t.integer "item_type"
+    t.integer "report_id"
+    t.integer "report_type"
+  end
 
   create_table "reportables", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reports", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
