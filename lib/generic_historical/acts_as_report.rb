@@ -1,4 +1,4 @@
-module GenericReporting
+module GenericHistorical
   module ActsAsReport
     extend ActiveSupport::Concern
 
@@ -17,7 +17,7 @@ module GenericReporting
         self.report_items_association_name = options[:report_items] || :report_items
 
         class_attribute :report_item_class_name
-        self.report_item_class_name = options[:class_name] || 'GenericReporting::ReportItem'
+        self.report_item_class_name = options[:class_name] || 'GenericHistorical::ReportItem'
 
 
         has_many self.report_items_association_name, as: :report, class_name: self.report_item_class_name
@@ -32,4 +32,4 @@ module GenericReporting
   end
 end
 
-ActiveRecord::Base.send :include, GenericReporting::ActsAsReport
+ActiveRecord::Base.send :include, GenericHistorical::ActsAsReport

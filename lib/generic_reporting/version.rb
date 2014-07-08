@@ -1,3 +1,0 @@
-module GenericReporting
-  VERSION = "0.0.1"
-end

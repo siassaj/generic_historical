@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "generic_reporting"
+require "generic_historical"
 
 module Dummy
   class Application < Rails::Application

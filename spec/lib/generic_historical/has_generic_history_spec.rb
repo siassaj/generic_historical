@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe GenericReporting::HasGenericReports do
+describe GenericHistorical::HasGenericReports do
   describe ".has_generic_reports" do
     let(:r) { Reportable.new }
 

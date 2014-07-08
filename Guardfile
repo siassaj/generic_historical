@@ -1,8 +1,12 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-# guard 'spin', cli: "--preload spec/dummy/config/application.rb" do
-guard :rspec do
+# spec_dir = File.expand_path('../spec', __FILE__)
+
+# guard :spin, cli: "--preload spec/dummy/config/application.rb --load-path=#{spec_dir}", spec_paths: ["Futts"]   do
+guard :spin, cli: "--preload spec/dummy/config/application.rb" do
+# guard :spin do
+# guard :rspec do
 
   watch('spec/spec_helper.rb')                                  { "spec" }
   watch(%r{^spec/support/(.+)\.rb$})                            { "spec" }
@@ -12,7 +16,7 @@ guard :rspec do
   watch(%r{^spec/.+_spec\.rb$})
 
   watch(%r{^lib/(.+)\.rb$})                   { |m| "spec/lib/#{m[1]}_spec.rb" }
-  # watch(%r{^lib/generic_reporting/(.+)\.rb$}) { |m| "spec/lib/generic_reporting/#{m[1]}_spec.rb" }
+  # watch(%r{^lib/generic_historical/(.+)\.rb$}) { |m| "spec/lib/generic_historical/#{m[1]}_spec.rb" }
   # watch(%r{^lib/bloob/(.+)\.rb$}) { |m| "spec/lib/bloob/#{m[1]}_spec.rb" }
 
   # Rails example
