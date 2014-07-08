@@ -1,6 +1,6 @@
 GIT
   remote: /home/quazimodo/Code/guard-spin
-  revision: 7106a2fa57e7392c00dcfdbc0d48d0e597649627
+  revision: fd2520551e2ffee9e81eb76f70e083bda4b983c1
   branch: feature/add-spec-and-test-dir-to-paths
   specs:
     guard-spin (0.3.0)

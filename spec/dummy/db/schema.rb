@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140703000600) do
+ActiveRecord::Schema.define(version: 20140708032457) do
 
-  create_table "report_items", force: true do |t|
+  create_table "historical_items", force: true do |t|
     t.integer "item_id"
     t.integer "item_type"
-    t.integer "report_id"
-    t.integer "report_type"
+    t.integer "historical_id"
+    t.integer "historical_type"
   end
 
   create_table "reportables", force: true do |t|

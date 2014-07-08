@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe GenericHistorical::ActsAshistorical do
+describe GenericHistorical::ActsAsHistorical do
 
   describe ".acts_as_historical" do
     let(:r) { Report.new }

@@ -1,5 +1,5 @@
 class Reportable < ActiveRecord::Base
 
-  has_generic_reports
+  has_generic_history
 
 end
