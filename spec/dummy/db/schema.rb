@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140708032457) do
+ActiveRecord::Schema.define(version: 20140708060517) do
 
   create_table "historical_items", force: true do |t|
     t.integer "item_id"
@@ -20,12 +20,24 @@ ActiveRecord::Schema.define(version: 20140708032457) do
     t.integer "historical_type"
   end
 
-  create_table "reportables", force: true do |t|
+  create_table "maintenances", force: true do |t|
+    t.integer  "robot_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "reports", force: true do |t|
+  create_table "robots", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "service_histories", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "upgrades", force: true do |t|
+    t.integer  "robot_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
