@@ -1,6 +1,6 @@
-require "generic_historical/acts_as_report"
-require "generic_historical/has_generic_reports"
-require "generic_historical/report_item"
+require "generic_historical/acts_as_historical"
+require "generic_historical/has_generic_history"
+require "generic_historical/historical_item"
 
 module GenericHistorical
 end
